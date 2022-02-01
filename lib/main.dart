@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
 //                          margin: const EdgeInsets.only(top: 275),
                           decoration: BoxDecoration(
                             image: const DecorationImage(
-                                image: AssetImage('assets/veraa.png')),
+                                image: AssetImage('assets/vera.png')),
                             borderRadius: BorderRadius.circular(15),
                             boxShadow: [
                               BoxShadow(
@@ -201,7 +201,7 @@ headerBackground() {
           height: 450,
           decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/vera1.png'), fit: BoxFit.cover),
+                image: AssetImage('assets/fundo.png'), fit: BoxFit.cover),
           ),
 /*
           child: BackdropFilter(
