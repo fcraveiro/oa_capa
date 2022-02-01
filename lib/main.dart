@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -391,19 +393,19 @@ class PlayButton extends StatelessWidget {
   }
 }
 
-/*
-      Container(
-        decoration: new BoxDecoration(
-          image: new DecorationImage(
-            image: new ExactAssetImage('assets/dog.png'),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: new BackdropFilter(
-          filter: new ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
-          child: new Container(
-            decoration: new BoxDecoration(color: Colors.white.withOpacity(0.0)),
-          ),
-        ),
+nuevo() {
+  Container(
+    decoration: const BoxDecoration(
+      image: DecorationImage(
+        image: ExactAssetImage('assets/dog.png'),
+        fit: BoxFit.cover,
       ),
-*/
+    ),
+    child: BackdropFilter(
+      filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+      child: Container(
+        decoration: BoxDecoration(color: Colors.white.withOpacity(0.0)),
+      ),
+    ),
+  );
+}
